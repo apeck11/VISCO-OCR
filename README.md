@@ -21,6 +21,28 @@ This repository includes a .NET 8 minimal API scaffold for inbound vendor invoic
 dotnet run --project src/Visco.Ocr.Api/Visco.Ocr.Api.csproj
 ```
 
+If you're already inside `src/Visco.Ocr.Api`, run:
+```bash
+dotnet run
+```
+
+Windows PowerShell (from repo root):
+```powershell
+./scripts/run-local.ps1
+```
+
+Windows Command Prompt (from repo root):
+```cmd
+scripts\run-local.cmd
+```
+
+**Troubleshooting `MSB1009: Project file does not exist`**
+- Make sure your terminal's current folder is the repository root before using `--project src/Visco.Ocr.Api/Visco.Ocr.Api.csproj`.
+- If your current folder is already `src/Visco.Ocr.Api`, use `dotnet run` (without `--project`).
+- Verify the file exists with:
+  - PowerShell: `Test-Path .\src\Visco.Ocr.Api\Visco.Ocr.Api.csproj`
+  - Command Prompt: `dir src\Visco.Ocr.Api\Visco.Ocr.Api.csproj`
+
 Swagger UI:
 - `http://localhost:5000/swagger` (or assigned ASP.NET port)
 
