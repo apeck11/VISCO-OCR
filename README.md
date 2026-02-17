@@ -16,6 +16,27 @@ This repository includes a .NET 8 minimal API scaffold for inbound vendor invoic
 - `src/Visco.Ocr.Api` — .NET 8 API service.
 - `docs/visco-ocr-textract-ai-brief.md` — roadmap and schema guidance.
 
+## Where this repo is right now (and how to access it)
+- **Here in Codex**: the working copy is in this environment at `/workspace/VISCO-OCR`.
+- **On GitHub (or another git host)**: only if you/your org has pushed this branch to a remote repository.
+
+Quick check from your machine/terminal:
+```bash
+git remote -v
+```
+
+Interpretation:
+- If you see a GitHub URL, the repo is connected to GitHub and you can clone/pull from there.
+- If no remote appears, this copy is local-only right now; push it to GitHub/Azure DevOps to access it from elsewhere.
+
+Example push flow (after creating an empty GitHub repo):
+```bash
+git remote add origin https://github.com/<org-or-user>/VISCO-OCR.git
+git push -u origin <branch-name>
+```
+
+---
+
 ## How to get these files onto your Windows machine
 You are not asking a dumb question — this is the exact right deployment question.
 
