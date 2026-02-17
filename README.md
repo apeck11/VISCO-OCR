@@ -16,6 +16,29 @@ This repository includes a .NET 8 minimal API scaffold for inbound vendor invoic
 - `src/Visco.Ocr.Api` — .NET 8 API service.
 - `docs/visco-ocr-textract-ai-brief.md` — roadmap and schema guidance.
 
+## How to get these files onto your Windows machine
+You are not asking a dumb question — this is the exact right deployment question.
+
+### Option A (recommended): clone with Git
+From PowerShell on your Windows 11 machine:
+```powershell
+git clone <your-repo-url>
+cd VISCO-OCR
+```
+
+### Option B: download ZIP from your repo host
+If this repo is on GitHub/Azure DevOps, use **Download ZIP**, then extract it to a folder like:
+`C:\VSCO\VISCO-OCR`
+
+### Option C: copy published output only (for IIS test)
+If you just want runnable files (DLLs), publish and copy the `publish` folder contents:
+```powershell
+dotnet publish .\src\Visco.Ocr.Api\Visco.Ocr.Api.csproj -c Release -o .\publish
+```
+Then copy everything in `publish` to your IIS app folder.
+
+---
+
 ## Run locally
 ```bash
 dotnet run --project src/Visco.Ocr.Api/Visco.Ocr.Api.csproj
