@@ -1,0 +1,7 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.swp
+src/Visco.Ocr.Api/App_Data/
