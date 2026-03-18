@@ -1,0 +1,60 @@
+{
+  "customer_name": "Chemceed",
+  "relationship_groups": [
+    {
+      "topic": "quote_price_estimate",
+      "projects": ["P97219", "P98230", "P98371", "P98503"],
+      "summary": "Chemceed quote price estimate workflow began as a custom report/tool, then was extended to support sourcing copied from quote, later refined through testing for rounding, profit, and decimal precision."
+    },
+    {
+      "topic": "pickup_address_manufacturer_workflow",
+      "projects": ["P97163", "P97363", "P97754", "P98148", "P98356"],
+      "summary": "Chemceed shipment and delivery logic for pickup address and manufacturer evolved through several linked projects, with later shipment-based behavior preferred over earlier logic."
+    },
+    {
+      "topic": "coa_and_specifications",
+      "projects": ["P96901", "P96685", "P97988", "P98084", "P98106", "P98107", "P98108", "P98105", "P98304", "P99011"],
+      "summary": "Chemceed’s specification and COA workflows include uploads, heading rules, customer-vs-purchase spec behavior, training, special document availability rules, and follow-up defect testing."
+    },
+    {
+      "topic": "document_email_logic",
+      "projects": ["P97045", "P97372", "P97454", "P97575", "P97625", "P98812", "P99955"],
+      "summary": "Customer contact selection and generated-email behavior were progressively customized across Quote, SO, PO, Invoice, and document-email workflows."
+    },
+    {
+      "topic": "po_customization_chain",
+      "projects": ["P96478", "P96480", "P96482", "P97160", "P97623"],
+      "summary": "Chemceed PO logic includes sub-statuses, package-based entry, document changes, delivery-vs-pickup labeling logic, and displaying both product and vendor product names when they differ."
+    },
+    {
+      "topic": "job_build_chain",
+      "projects": ["P97432", "P97466", "P97501", "P97527", "P97909", "P97911", "P98551", "P98688", "P98761"],
+      "summary": "Job Build functionality was configured, tested, trained, and repeatedly refined around assemblies, costs, package handling, and allocation behavior."
+    },
+    {
+      "topic": "customer_vendor_product_data_and_uploads",
+      "projects": ["P95432", "P95703", "P95892", "P95838", "P96096", "P96415", "P96574", "P96685", "P96901", "P96961", "P97320", "P97653", "P97690", "P97836", "P97987", "P98423", "P98499", "P98686"],
+      "summary": "Many Chemceed issues trace back to imported data, mapping rules, naming conversions, and assumptions applied during uploads and clean-up."
+    },
+    {
+      "topic": "sales_order_customer_contact_and_delivery_info",
+      "projects": ["P96683", "P97045", "P97372", "P97570", "P98112", "P99333"],
+      "summary": "Sales Order and Quote behavior depends on customer contact selection, ship-to-driven delivery information, and correct customer ID inheritance."
+    },
+    {
+      "topic": "logistics_documents_bol_warehouse_delivery",
+      "projects": ["P96594", "P96739", "P96741", "P96742", "P97161", "P97162", "P97163", "P97376", "P97593", "P97777", "P98106", "P98606", "P99177", "P99737"],
+      "summary": "Chemceed logistics documents were extensively customized across warehouse arrival, delivery instructions, BOL, pallet labels, Freight Order, COA availability, and shipment link behavior."
+    },
+    {
+      "topic": "quickbooks_and_accounting",
+      "projects": ["P95988", "P96931", "P97176", "P97382", "P97437", "P97458", "P97499", "P97627", "P97718", "P97837", "P98171", "P98189", "P98644", "P98657", "P99498", "P100091", "P100066"],
+      "summary": "Chemceed accounting issues commonly involve QuickBooks configuration, posting failures, GL mapping, invoice and cost batch errors, COGS handling, and prepayment behavior."
+    },
+    {
+      "topic": "crm_and_opportunity_customization",
+      "projects": ["P97043", "P96907", "P96905", "P97366", "P97365", "P97891", "P98006", "P98419", "P99251"],
+      "summary": "Chemceed CRM behavior includes vendor/customer contact logic, prefiltered scans, opportunity-linked downstream entities, custom alerts, incident/sourcing request menus, and richer activity linking."
+    }
+  ]
+}
